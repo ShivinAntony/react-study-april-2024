@@ -5,14 +5,19 @@ import States from './components/States'
 import { Container } from "react-bootstrap"
 
 function App() {
+  const states = [
+    {name:'Kerala' , language :'Malayalam' , population:'1000'},
+    {name:'TamilNadu' , language :'Tamil' , population:'4000'},
+    {name:'Mumbai' , language :'Hindi' , population:'3000'},
+    {name:'Assam' , language :'Malayalam' , population:'7000'},
+    {name:'Mahaarash' , language :'Mala' , population:'9000'},
+    {name:'Punea' , language :'Layalam' , population:'8000'},
+  ]
   return (
     <>
       <div className='App'>
         <Container >
-          <States name={"TamilNadu"} language={'Malayalam'} population={1000} />
-          <States name={"Mumbai"} language={'Hindi'}  population={4000}/>
-          <States name={"Delhi"} language={'Hindi'} population={3000}/>
-          <States name={"Assam"} language={'Tamil'} population={6000}/>
+         <States states ={states} />
         </Container>
       </div>
     </>
